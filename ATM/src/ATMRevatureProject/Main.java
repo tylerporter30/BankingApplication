@@ -1,14 +1,9 @@
 package ATMRevatureProject;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
 public class Main {
 
 	public static void main(String[] args) {
-		
-		Scanner s = new Scanner(System.in);
-		
+
 		UsernameAndPassword userNamePassword = new UsernameAndPassword();
 		userNamePassword.userInput();
 		
@@ -23,6 +18,5 @@ public class Main {
 	
 
 		
-		s.close();
 	}
 }

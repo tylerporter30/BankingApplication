@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class AccountTransactions {
 
-	
+	@SuppressWarnings("unlikely-arg-type")
 	public void transactions() {
 		
 		Scanner s = new Scanner(System.in);
@@ -15,6 +15,7 @@ public class AccountTransactions {
 		
 		System.out.println("Would you like to 'withdraw', 'deposit', or 'transfer'? Please type one of the three options.");
 		
+	
 		String trans = s.nextLine();
 		
 		
@@ -23,11 +24,10 @@ public class AccountTransactions {
 			
 			try {
 				
-			
+				//System.out.println("Welcome!");
+
 				//double money =  s.nextDouble();
-			
-					
-		
+
 				if(trans.equals("withdraw") || trans.equals("Withdraw")){
 					
 					System.out.println("How much do you want to withdraw?");
@@ -59,6 +59,7 @@ public class AccountTransactions {
 				else {
 						
 					System.out.println("Thank you for banking with us.");
+					break;
 					}
 				}
 			
