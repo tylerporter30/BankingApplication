@@ -2,7 +2,7 @@ package ATMRevatureProject;
 
 import java.util.Scanner;
 
-public class UsernameAndPassword extends AccountTransactions {
+public class UsernameAndPassword {
 
 	
 	
@@ -37,24 +37,36 @@ public class UsernameAndPassword extends AccountTransactions {
 				String passwordInput = s.nextLine(); //reading only string user input
 				System.out.println("Your password is: " + passwordInput);
 				
-			}
-			else {
-				System.out.println("Thank you, have a great day");
-			}
+				
+				AccountTransactions accountTrans = new AccountTransactions(); //created an object form AccountTransaction class
+				
+				if(input.equals("1")){
+					
+				accountTrans.transactions();
+				}
+				
+				else {
+					System.out.println("Thank you, have a great day");
+				}
+			}		
 		}
 		
 		else if (input.equals("2")) {
 			
-			System.out.println("Welcome, I hope you have a great day at work!");
+			System.out.println("Welcome administrator, I hope you have a great day at work!");
+			
+			//AccountInformation actInfo = new AccountInformation();
+			//actInfo.userInfo();
+			Administrator ad = new Administrator();
+			ad.admin();
 			
 		}
 		
 		else {
 			
 			System.out.println("Thank you, have a great day.");
+			
 		}
-		
 		//s.close();
-	}
-	
+	}	
 }

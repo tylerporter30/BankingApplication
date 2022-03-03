@@ -12,14 +12,14 @@ public class AccountInformation {
 		u.name = "Tyler";
 		u.address = "ABC Road";
 		u.SSN = 123456789;
-		u.number = 567;
+		u.accountNum = 444555;
 		u.checkingAct = 1000;
 		u.savingsAct = 5000;
 		
 		System.out.println("Account Name: " + u.name +
 				"\nAddress: " + u.address +
 				"\nSSN: " +u.SSN + 
-				"\nAccount Number: " + u.number + 
+				"\nAccount Number: " + u.accountNum + 
 				"\nChecking Account: " + u.checkingAct + 
 				"\nSavings Account: " + u.savingsAct);
 		

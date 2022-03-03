@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class AccountTransactions {
 
+	
+
 	@SuppressWarnings("unlikely-arg-type")
 	public void transactions() {
 		
@@ -23,10 +25,6 @@ public class AccountTransactions {
 		while(!s.equals("done") && !s.equals("Done")) {
 			
 			try {
-				
-				//System.out.println("Welcome!");
-
-				//double money =  s.nextDouble();
 
 				if(trans.equals("withdraw") || trans.equals("Withdraw")){
 					
@@ -34,7 +32,7 @@ public class AccountTransactions {
 					
 					amount = s.nextDouble();
 					balance = balance + amount;
-					System.out.println("Withdraw Account: " + balance + " \nPlease type 'done' when you want to exit.");
+					System.out.println("Account Balance: " + balance + " \nPlease type 'done' when you want to exit.");
 		
 				}
 					
@@ -44,7 +42,7 @@ public class AccountTransactions {
 					
 					amount = s.nextDouble();
 					balance = balance + amount;
-					System.out.println("Deposit Account: " + balance + " \nPlease type 'done' when you want to exit.");
+					System.out.println("Account Balance: " + balance + " \nPlease type 'done' when you want to exit.");
 				}
 						
 				else if(trans.equals("transfer") || trans.equals("Transfer")) {
@@ -53,7 +51,7 @@ public class AccountTransactions {
 					
 					amount = s.nextDouble();
 					balance = balance + amount;
-					System.out.println("Transfer Account: " + balance + " \nPlease type 'done' when you want to exit.");
+					System.out.println("Account Balance: " + balance + " \nPlease type 'done' when you want to exit.");
 				}
 
 				else {

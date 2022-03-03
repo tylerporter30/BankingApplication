@@ -7,15 +7,19 @@ public class Main {
 		UsernameAndPassword userNamePassword = new UsernameAndPassword();
 		userNamePassword.userInput();
 		
-		AccountTransactions accountTrans = new AccountTransactions();
-		accountTrans.transactions();
+		//AccountTransactions accountTrans = new AccountTransactions();
+		//accountTrans.transactions();
+		
+
 		
 		//AccountInformation actInfo = new AccountInformation();
 		//actInfo.userInfo();
 		
-		Employee employee = new Employee();
-		employee.userInfo();
+		//Employee employee = new Employee();
+		//employee.userInfo();
 	
+		//Administrator ad = new Administrator();
+		//ad.admin();
 
 		
 	}

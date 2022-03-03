@@ -9,7 +9,7 @@ public class User implements java.io.Serializable {
 	public String name;
 	public String address;
 	public int SSN;
-	public int number;
+	public int accountNum;
 	public int checkingAct;
 	public int savingsAct;
 	
