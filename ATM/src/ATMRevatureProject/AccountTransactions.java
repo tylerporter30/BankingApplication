@@ -26,9 +26,9 @@ public class AccountTransactions {
 			
 			try {
 
-				if(trans.equals("withdraw") || trans.equals("Withdraw")){
+				if(trans.equalsIgnoreCase("withdraw")){
 					
-					System.out.println("How much do you want to withdraw?");
+					System.out.println("How much would you like to withdraw? (Please type a '-' before your amount)");
 					
 					amount = s.nextDouble();
 					balance = balance + amount;
@@ -36,18 +36,18 @@ public class AccountTransactions {
 		
 				}
 					
-				else if(trans.equals("deposit") || trans.equals("Deposit")){
+				else if(trans.equalsIgnoreCase("deposit")){
 						
-					System.out.println("How much do you want to deposit?");
+					System.out.println("How much would you like to deposit?");
 					
 					amount = s.nextDouble();
 					balance = balance + amount;
 					System.out.println("Account Balance: " + balance + " \nPlease type 'done' when you want to exit.");
 				}
 						
-				else if(trans.equals("transfer") || trans.equals("Transfer")) {
+				else if(trans.equalsIgnoreCase("transfer")) {
 							
-					System.out.println("How much do you want to transfer?");
+					System.out.println("How much would you like to transfer?");
 					
 					amount = s.nextDouble();
 					balance = balance + amount;

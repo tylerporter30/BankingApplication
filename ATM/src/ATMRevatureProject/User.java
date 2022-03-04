@@ -13,8 +13,4 @@ public class User implements java.io.Serializable {
 	public int checkingAct;
 	public int savingsAct;
 	
-	public void mailCheck() {
-		
-		System.out.println("Mailing a check to " + name + " " + address);
-	}
 }

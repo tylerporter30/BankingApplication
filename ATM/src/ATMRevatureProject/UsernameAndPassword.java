@@ -11,14 +11,14 @@ public class UsernameAndPassword {
 		Scanner s = new Scanner(System.in);
 		
 		System.out.println("Welcome to our bank!");
-		System.out.println("Are you wanting to bank with us or are you an employee?");
-		System.out.println("Please type the number '1' if you are a customer. If you are an employee please type the number '2'.");
+		System.out.println("Are you a new customer or an employee?");
+		System.out.println("Please type the number '1' if you are a new customer, the number '2' if you are an administrator, or the number '3' if you are an employee.");
 		
 		String input = s.nextLine();
 		
 		if(input.equals("1")){
 			
-			System.out.println("Please type 'yes' or 'no' if you want to apply for a bank account.");
+			System.out.println("Would you like to apply for a bank account? Please type 'yes' or 'no'.");
 			
 			String input1 = s.nextLine();
 			
@@ -26,7 +26,7 @@ public class UsernameAndPassword {
 				
 				System.out.println("Thank you for applying.");
 				
-				System.out.println("To create an account please type in a username and password.");
+				System.out.println("To create an account, you must create a username and password.");
 				System.out.println("Please enter your username.");
 				
 				String userNameInput = s.nextLine(); //reading only string user input
@@ -53,12 +53,23 @@ public class UsernameAndPassword {
 		
 		else if (input.equals("2")) {
 			
-			System.out.println("Welcome administrator, I hope you have a great day at work!");
+			System.out.println("Welcome Administrator, I hope you are having a great day! What would you like to do?");
 			
 			//AccountInformation actInfo = new AccountInformation();
 			//actInfo.userInfo();
 			Administrator ad = new Administrator();
 			ad.admin();
+			
+		}
+		
+		else if (input.equals("3")) {
+			
+			System.out.println("Welcome Employee, I hope you are having a great day! What would you like to do?");
+			
+			//AccountInformation actInfo = new AccountInformation();
+			//actInfo.userInfo();
+			Employee employee = new Employee();
+			employee.emp();
 			
 		}
 		
