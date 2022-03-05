@@ -2,18 +2,18 @@ package ATMRevatureProject;
 
 import java.util.Scanner;
 
-public class Administrator extends AccountInformation {
+public class Administrator extends WriteObjects {
 	
 	public void admin() {
 
-		AccountInformation actInfo = new AccountInformation(); //creating an object from the AccountInformation Class
+		WriteObjects actInfo = new WriteObjects(); //creating an object from the AccountInformation Class
 		//actInfo.userInfo(); 
 		
 		//print statement asking the Admin what they want to do
-		System.out.println("Press '1' to view customer account information. \n"
-				+ "Press '2' to approve/deny open applications for accounts. \n"
-				+ "Press '3' to withdraw, deposit, or transfer from an account. \n"
-				+ "Press '4' to cancel accounts.");
+		System.out.println("\n1: to view customer account information. \n"
+				+ "2: to approve/deny open applications for accounts. \n"
+				+ "3: to withdraw, deposit, or transfer from an account. \n"
+				+ "4: to cancel accounts.");
 		
 		//setting up scanner class and using .nextLine to take in user input from the console
 		Scanner s = new Scanner(System.in);
@@ -61,7 +61,7 @@ public class Administrator extends AccountInformation {
 			
 			else if (input.equals("4")) {
 				System.out.println("Do you want to cancel this account? If so, type 'CANCEL'.");
-				actInfo.userInfo();
+				//actInfo.userInfo();
 				
 				String input1 = s.nextLine();
 				if(input1.equals("CANCEL")) {

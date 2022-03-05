@@ -15,7 +15,7 @@ public class AccountTransactions {
 		double amount;
 		double balance = 0;
 		
-		System.out.println("Would you like to 'withdraw', 'deposit', or 'transfer'? Please type one of the three options.");
+		System.out.println("\nWould you like to 'withdraw', 'deposit', or 'transfer'? Please type one of the three options.");
 		
 	
 		String trans = s.nextLine();
@@ -28,42 +28,42 @@ public class AccountTransactions {
 
 				if(trans.equalsIgnoreCase("withdraw")){
 					
-					System.out.println("How much would you like to withdraw? (Please type a '-' before your amount)");
+					System.out.println("\nHow much would you like to withdraw? (Please type a '-' before your amount)");
 					
 					amount = s.nextDouble();
 					balance = balance + amount;
-					System.out.println("Account Balance: " + balance + " \nPlease type 'done' when you want to exit.");
+					System.out.println("\nAccount Balance: " + balance + " \nPlease type 'done' when you want to exit.");
 		
 				}
 					
 				else if(trans.equalsIgnoreCase("deposit")){
 						
-					System.out.println("How much would you like to deposit?");
+					System.out.println("\nHow much would you like to deposit?");
 					
 					amount = s.nextDouble();
 					balance = balance + amount;
-					System.out.println("Account Balance: " + balance + " \nPlease type 'done' when you want to exit.");
+					System.out.println("\nAccount Balance: " + balance + " \nPlease type 'done' when you want to exit.");
 				}
 						
 				else if(trans.equalsIgnoreCase("transfer")) {
 							
-					System.out.println("How much would you like to transfer?");
+					System.out.println("\nHow much would you like to transfer?");
 					
 					amount = s.nextDouble();
 					balance = balance + amount;
-					System.out.println("Account Balance: " + balance + " \nPlease type 'done' when you want to exit.");
+					System.out.println("\nAccount Balance: " + balance + " \nPlease type 'done' when you want to exit.");
 				}
 
 				else {
 						
-					System.out.println("Thank you for banking with us.");
+					System.out.println("\nThank you for banking with us.");
 					break;
 					}
 				}
 			
 			catch(InputMismatchException e) {
 				if(s.nextLine().equalsIgnoreCase("done")) {
-				System.out.println("Thank you for banking with us!");
+				System.out.println("\nThank you for banking with us!");
 				break;
 				}
 			}

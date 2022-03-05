@@ -1,14 +1,18 @@
 package ATMRevatureProject;
 
-import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
+import java.util.Scanner;
 
-public class AccountInformation {
-	
+public class WriteObjects extends UsernameAndPassword {
+			
 	public void userInfo() {
-		
+					
 		User u = new User();
+		
+		//u.password = newUserName;
+	    
 		u.name = "Tyler";
 		u.address = "ABC Road";
 		u.SSN = 123456789;
@@ -23,6 +27,9 @@ public class AccountInformation {
 				"\nChecking Account: " + u.checkingAct + 
 				"\nSavings Account: " + u.savingsAct);
 		
+		//System.out.println(u.password);
+		
+		
 		try {
 			
 			FileOutputStream fileOut = new FileOutputStream("./src/ATMserialization.ser");
@@ -30,12 +37,13 @@ public class AccountInformation {
 			out.writeObject(u);
 			out.close();
 			fileOut.close();
-			
 		}
-		catch (IOException ex) {
+		
+		catch (IOException e) {
 			
-			ex.printStackTrace();
-			
+			e.printStackTrace();
 		}
 	}
 }
+
+

@@ -2,15 +2,15 @@ package ATMRevatureProject;
 
 import java.util.Scanner;
 
-public class Employee extends AccountInformation {
+public class Employee extends WriteObjects {
 
 	public void emp() {
 
-		AccountInformation actInfo = new AccountInformation();
+		WriteObjects actInfo = new WriteObjects();
 		//actInfo.userInfo(); 
 		
-		System.out.println("Press '1' to view customer account information. \n"
-				+ "Press '2' to approve/deny open applications for accounts.");
+		System.out.println("\n1: to view customer account information. \n"
+				+ "2: to approve/deny open applications for accounts.");
 		
 		Scanner s = new Scanner(System.in);
 		String input = s.nextLine();

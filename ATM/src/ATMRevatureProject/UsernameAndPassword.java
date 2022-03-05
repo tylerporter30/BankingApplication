@@ -2,23 +2,27 @@ package ATMRevatureProject;
 
 import java.util.Scanner;
 
-public class UsernameAndPassword {
-
+public class UsernameAndPassword implements java.io.Serializable {
 	
 	
+	//public String newUserName;
+	
+		
 	public void userInput() {
 		
 		Scanner s = new Scanner(System.in);
 		
-		System.out.println("Welcome to our bank!");
+		
+		System.out.println("\n-------------Welcome to our bank!-------------\n");
 		System.out.println("Are you a new customer or an employee?");
-		System.out.println("Please type the number '1' if you are a new customer, the number '2' if you are an administrator, or the number '3' if you are an employee.");
+		System.out.println("Please type the one of the following numbers \n\n1: if you are a new customer \n2: if you are an administrator \n3: if you are an employee.");
+		System.out.println("\n----------------------------------------------");
 		
 		String input = s.nextLine();
 		
 		if(input.equals("1")){
 			
-			System.out.println("Would you like to apply for a bank account? Please type 'yes' or 'no'.");
+			System.out.println("\nWould you like to apply for a bank account? Please type 'yes' or 'no'.");
 			
 			String input1 = s.nextLine();
 			
@@ -26,13 +30,15 @@ public class UsernameAndPassword {
 				
 				System.out.println("Thank you for applying.");
 				
-				System.out.println("To create an account, you must create a username and password.");
+				System.out.println("\nTo create an account, you must create a username and password.");
 				System.out.println("Please enter your username.");
 				
-				String userNameInput = s.nextLine(); //reading only string user input
+				//reading only string user input
+				String userNameInput = s.nextLine(); 
 				System.out.println("Your username is: " + userNameInput);
+				//newUserName = userNameInput;
 				
-				System.out.println("Please enter your password.");
+				System.out.println("\nPlease enter your password.");
 				
 				String passwordInput = s.nextLine(); //reading only string user input
 				System.out.println("Your password is: " + passwordInput);
@@ -46,16 +52,16 @@ public class UsernameAndPassword {
 				}
 				
 				else {
-					System.out.println("Thank you, have a great day");
+					System.out.println("\nThank you, have a great day");
 				}
 			}		
 		}
 		
 		else if (input.equals("2")) {
 			
-			System.out.println("Welcome Administrator, I hope you are having a great day! What would you like to do?");
+			System.out.println("\nWelcome Administrator, I hope you are having a great day! What would you like to do?");
 			
-			//AccountInformation actInfo = new AccountInformation();
+			//WriteObjects actInfo = new WriteObjects();
 			//actInfo.userInfo();
 			Administrator ad = new Administrator();
 			ad.admin();
@@ -64,9 +70,9 @@ public class UsernameAndPassword {
 		
 		else if (input.equals("3")) {
 			
-			System.out.println("Welcome Employee, I hope you are having a great day! What would you like to do?");
+			System.out.println("\nWelcome Employee, I hope you are having a great day! What would you like to do?");
 			
-			//AccountInformation actInfo = new AccountInformation();
+			//WriteObjects actInfo = new WriteObjects();
 			//actInfo.userInfo();
 			Employee employee = new Employee();
 			employee.emp();
@@ -75,7 +81,7 @@ public class UsernameAndPassword {
 		
 		else {
 			
-			System.out.println("Thank you, have a great day.");
+			System.out.println("\nThank you, have a great day.");
 			
 		}
 		//s.close();
