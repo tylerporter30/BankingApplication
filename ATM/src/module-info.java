@@ -1,2 +1,3 @@
 module atm {
+	exports ATMRevatureProject;
 }
