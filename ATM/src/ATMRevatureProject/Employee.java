@@ -25,6 +25,9 @@ public class Employee {
 		System.out.println("\n1: to view customer account information. \n"
 				+ "2: to approve/deny open applications for accounts.");
 		
+         } 
+         else {
+        	 System.out.println("An error has occured. Please try again.");
          }
 	}
 }

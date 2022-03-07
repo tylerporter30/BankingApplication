@@ -22,14 +22,15 @@ public class Administrator {
          s.nextLine();
          
          if(username.equalsIgnoreCase("admin") && password.equalsIgnoreCase("password")) {
-        	 
- 
-        	 
+        	    	 
         	//print statement asking the Admin what they want to do
      		System.out.println("\n1: to view customer account information. \n"
      				+ "2: to approve/deny open applications for accounts. \n"
      				+ "3: to withdraw, deposit, or transfer from an account. \n"
      				+ "4: to cancel accounts.");
+         }
+         else {
+        	 System.out.println("An error has occured. Please try again.");
          }
 	}
 }
